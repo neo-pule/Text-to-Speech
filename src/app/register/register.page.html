@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <h3 class="header">Login </h3> -->
+  <div class="main">
+    <ion-card>
+      <form [formGroup]="register" (ngSubmit)="onSubmit(register)">
+      <ion-item class="ion-activated">
+        <ion-label position="floating"> First Name </ion-label>
+        <ion-input [formControlName]="Fname" placeholder="Enter First Name"></ion-input>
+      </ion-item>
+    
+      <ion-item >
+        <ion-label position="floating"> Last Name </ion-label>
+        <ion-input [formControlName]="Lname" placeholder="Enter Last Name"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="floating"> Email </ion-label>
+        <ion-input [formControlName]="email" placeholder="Enter Email"></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-label position="floating"> Contact Number</ion-label>
+        <ion-input [formControlName]="phone" placeholder="Enter Contact Number"></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-label position="floating"> Address </ion-label>
+        <ion-input [formControlName]="address" placeholder="Enter Address"></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-label position="floating"> Password </ion-label>
+        <ion-input [formControlName]="password" placeholder="Enter Password" type="password"></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-label position="floating"> Confirm Password </ion-label>
+        <ion-input [formControlName]="cpassword" placeholder="Re-enter Password" type="password"></ion-input>
+      </ion-item>
+      </form>
+    </ion-card>
+    <br>
+    <ion-button expand="block" fill="outline" type="submit">Sign Up</ion-button>
+    <p>Alreadyhave an account, click <a [routerLink]="['/login']">here</a>.</p>
+  </div>
+
+</ion-content>

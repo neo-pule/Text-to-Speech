@@ -1,0 +1,29 @@
+/* Without setting height the slides will take up the height of the slide's content */
+ion-slides {
+  height: 100%;
+}
+.body{
+  // background: gray;
+  border-radius: 0 20% 0 0;
+  width: 100%;
+}
+.header{
+position: absolute;
+right: 0;
+padding: 2px 5px 2px 5px;
+}
+.slide-item{
+  --background: url('../../assets/splash.gif') 0 0/100% 100% no-repeat;
+  height: 100%;
+  width: 190%;
+}
+.slide-item1{
+  --background: url('../../assets/splash1.gif') 0 0/100% 100% no-repeat;
+  height: 100%;
+  width: 190%;
+}
+.slide-item2{
+  --background: url('../../assets/sign-back.png') 0 0/100% 100% no-repeat;
+  height: 100%;
+  width: 190%;
+}
